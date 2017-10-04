@@ -1,0 +1,23 @@
+{
+  "name": "markdown_navigator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmu332233/markdown_navigator.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "minung.han",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmu332233/markdown_navigator/issues"
+  },
+  "homepage": "https://github.com/hmu332233/markdown_navigator#readme"
+}
