@@ -63,4 +63,9 @@ typings/
 # goorm.io
 goorm.manifest
 
+# test
+test_dir
+index.md
+
+
 # End of https://www.gitignore.io/api/node

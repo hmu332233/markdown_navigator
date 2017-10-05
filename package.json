@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/hmu332233/markdown_navigator/issues"
   },
-  "homepage": "https://github.com/hmu332233/markdown_navigator#readme"
+  "homepage": "https://github.com/hmu332233/markdown_navigator#readme",
+  "dependencies": {
+    "node-dir": "^0.1.17"
+  }
 }
