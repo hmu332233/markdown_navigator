@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hmu332233/markdown_navigator#readme",
   "dependencies": {
-    "node-dir": "^0.1.17"
+    "node-dir": "^0.1.17",
+    "underscore": "^1.8.3"
   }
 }
