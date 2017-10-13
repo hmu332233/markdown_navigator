@@ -27,6 +27,7 @@
   "dependencies": {
     "flatiron": "^0.4.3",
     "node-dir": "^0.1.17",
+    "path-reader": "^1.0.4",
     "underscore": "^1.8.3"
   }
 }
