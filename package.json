@@ -4,7 +4,7 @@
   "description": "",
   "main": "./lib/app.js",
   "bin": {
-    "mdn": "bin/markdown_navigator.js"
+    "mdnv": "bin/markdown_navigator.js"
   },
   "scripts": {
     "start": "node app.js",
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/hmu332233/markdown_navigator#readme",
   "dependencies": {
     "flatiron": "^0.4.3",
-    "path-reader": "^1.0.4",
+    "path-reader": "^1.0.6",
     "underscore": "^1.8.3"
   }
 }
