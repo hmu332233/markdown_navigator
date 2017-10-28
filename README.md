@@ -41,7 +41,8 @@ test_folder
 |   |-- file2.md
 |   |-- file3.md
 ```
-<br/>  
+<br/>
+
 **basic example**
 ```bash
 $ cd test_folder/
@@ -54,6 +55,7 @@ $ mdnv create
 [file3.md](/folder/file3.md)
 ```
 <br/>  
+
 **option example**  
 이번에는 `folder_name`과 `-n` 옵션을 추가한 예제입니다.
 ```bash
