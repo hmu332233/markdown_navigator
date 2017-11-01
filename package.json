@@ -1,12 +1,16 @@
 {
   "name": "markdown_navigator",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "app.js",
+  "main": "./lib/app.js",
+  "bin": {
+    "mdnv": "bin/markdown_navigator.js"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "node test.js"
   },
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hmu332233/markdown_navigator.git"
@@ -19,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/hmu332233/markdown_navigator/issues"
   },
-  "homepage": "https://github.com/hmu332233/markdown_navigator#readme"
+  "homepage": "https://github.com/hmu332233/markdown_navigator#readme",
+  "dependencies": {
+    "flatiron": "^0.4.3",
+    "path-reader": "^1.0.6",
+    "underscore": "^1.8.3"
+  }
 }
