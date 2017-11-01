@@ -5,6 +5,8 @@ markdown_navigator는 여러분의 폴더 안의 모든 파일에 대해서
 
 github과 같이 markdown을 사용하는 곳에서 빠르게 index를 만들기 위해 사용합니다.
 
+![example](example.PNG)
+
 ## Installation 
 ```bash
 $ npm install -g markdown_navigator
