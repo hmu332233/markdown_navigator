@@ -1,10 +1,11 @@
-English | [한국어](README-KR.md)
+[English](README.md) | 한국어
 
 # markdown_navigator
 
-**markdown_navigator** creates a link to quickly navigate to all the files in your folder.
+markdown_navigator는 여러분의 폴더 안의 모든 파일에 대해서  
+편하게 이동할 수 있는 link를 만들어줍니다.
 
-Use it to quickly create index where markdown is used, such as "github".
+github과 같이 markdown을 사용하는 곳에서 빠르게 index를 만들기 위해 사용합니다.
 
 ![example](example.PNG)
 
@@ -29,8 +30,7 @@ options:
 
 
 ### Basic
-If only the default command is entered,  
-creates a 'index.md' for all files within the currently located folder.
+현재 있는 위치에서 모든 파일에 대해 이동이 가능한 index.md 파일을 생성합니다.
 ```
 $ mdnv create
 ```
@@ -52,7 +52,7 @@ test_folder
 $ cd test_folder/
 $ mdnv create
 ```
-`index.md` is created with the following contents.
+다음과 같은 내용의 `index.md`파일이 생성됩니다.
 ```
 [file1.md](/file1.md)
 [file2.md](/folder/file2.md)
@@ -61,12 +61,12 @@ $ mdnv create
 <br/>  
 
 **option example**  
-This is an example of adding `folder_name` and `-n` options.
+이번에는 `folder_name`과 `-n` 옵션을 추가한 예제입니다.
 ```bash
 $ cd test_folder/
 $ mdnv create folder -n menu
 ```
-`index.md` is created with the following contents.
+다음과 같은 내용의 `menu.md`파일이 생성됩니다.
 ```
 [file2.md](/folder/file2.md)
 [file3.md](/folder/file3.md)
@@ -74,9 +74,9 @@ $ mdnv create folder -n menu
 
 ## Version
 
-**current verstion : 0.1.0**  
+**현재 버전 : 0.1.0**  
 
-[change log](CHANGELOG.md)
+[변경 내역](CHANGELOG.md)
 
 ## License
 
