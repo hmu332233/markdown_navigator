@@ -15,13 +15,13 @@ $ npm install -g markdown_navigator
 ```
 ## Usage
 ```bash
-$ mdnv create [foler_name] [options]
+$ mdnv create [foler_names] [options]
 ```
 ```bash
 $ mdnv --help
-usage: mdnv create [foler_name] [options]
+usage: mdnv create [foler_names] [options]
 
-folder_name:   The name of the folder where you want to create the index
+folder_name:   names of folders where you want to create the index
 
 options:
   -n name      The name of the index file to be created. default is "index"
@@ -41,9 +41,12 @@ $ mdnv create
 ```
 test_folder
 |-- file1.md
-|-- folder
+|-- folder1
 |   |-- file2.md
 |   |-- file3.md
+|-- folder2
+|   |-- file4.md
+|   |-- file5.md
 ```
 <br/>
 
@@ -55,8 +58,10 @@ $ mdnv create
 다음과 같은 내용의 `index.md`파일이 생성됩니다.
 ```
 [file1.md](/file1.md)
-[file2.md](/folder/file2.md)
-[file3.md](/folder/file3.md)
+[file2.md](/folder1/file2.md)
+[file3.md](/folder1/file3.md)
+[file4.md](/folder2/file4.md)
+[file5.md](/folder2/file5.md)
 ```
 <br/>  
 
@@ -64,17 +69,28 @@ $ mdnv create
 이번에는 `folder_name`과 `-n` 옵션을 추가한 예제입니다.
 ```bash
 $ cd test_folder/
-$ mdnv create folder -n menu
+$ mdnv create folder1 -n menu
 ```
 다음과 같은 내용의 `menu.md`파일이 생성됩니다.
 ```
-[file2.md](/folder/file2.md)
-[file3.md](/folder/file3.md)
+[file2.md](/folder1/file2.md)
+[file3.md](/folder1/file3.md)
+```
+`folder_name`에는 여러개의 폴더명을 입력할 수도 있습니다.
+```bash
+$ cd test_folder/
+$ mdnv create folder1/ foder2/
+```
+```bash
+[file2.md](/folder1/file2.md)
+[file3.md](/folder1/file3.md)
+[file4.md](/folder2/file4.md)
+[file5.md](/folder2/file5.md)
 ```
 
 ## Version
 
-**현재 버전 : 0.1.0**  
+**현재 버전 : 0.2.0**  
 
 [변경 내역](CHANGELOG.md)
 
