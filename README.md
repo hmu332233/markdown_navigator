@@ -101,7 +101,7 @@ $ mdnv create ./dir1 -p ./other_directory
 
 ## Version
 
-**current verstion : 0.2.0**  
+**current verstion : 0.3.0**  
 
 [change log](CHANGELOG.md)
 
