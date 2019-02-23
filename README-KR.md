@@ -15,18 +15,23 @@ $ npm install -g markdown_navigator
 ```
 ## Usage
 ```bash
-$ mdnv create [foler_names] [options]
+$ mdnv create <directory> [options]
 ```
 ```bash
-$ mdnv --help
-usage: mdnv create [foler_names] [options]
+Usage: create <directory> [options]
 
-folder_name:   names of folders where you want to create the index
+creates a index.md to quickly navigate to all the files in your directory.
 
-options:
-  -n name      The name of the index file to be created. default is "index"
-  -h, --help   You're staring at it
+Options:
+  -n, --name [name]  The name of the index file to be created. (default: "index")
+  -h, --help         output usage information
+
+  Examples:
+
+    $ mdnv create ./directory
+    $ mdnv create ./directory -n navi
 ```
+
 
 
 ### Basic
@@ -37,14 +42,14 @@ $ mdnv create
 
 
 ### Example  
-**example folder**
-```
-test_folder
+**example directory**
+```bash
+test_directory
 |-- file1.md
-|-- folder1
+|-- dir1
 |   |-- file2.md
 |   |-- file3.md
-|-- folder2
+|-- dir2
 |   |-- file4.md
 |   |-- file5.md
 ```
@@ -56,41 +61,47 @@ $ cd test_folder/
 $ mdnv create
 ```
 다음과 같은 내용의 `index.md`파일이 생성됩니다.
-```
-[file1.md](/file1.md)
-[file2.md](/folder1/file2.md)
-[file3.md](/folder1/file3.md)
-[file4.md](/folder2/file4.md)
-[file5.md](/folder2/file5.md)
+```bash
+[file1.md](/file1.md)  
+[file2.md](/dir1/file2.md)  
+[file3.md](/dir1/file3.md)  
+[file4.md](/dir2/file4.md)  
+[file5.md](/dir2/file5.md)
 ```
 <br/>  
 
 **option example**  
-이번에는 `folder_name`과 `-n` 옵션을 추가한 예제입니다.
+이번에는 `directory`과 `-n` 옵션을 추가한 예제입니다.
 ```bash
 $ cd test_folder/
-$ mdnv create folder1 -n menu
+$ mdnv create dir1 -n menu
 ```
 다음과 같은 내용의 `menu.md`파일이 생성됩니다.
-```
-[file2.md](/folder1/file2.md)
-[file3.md](/folder1/file3.md)
-```
-`folder_name`에는 여러개의 폴더명을 입력할 수도 있습니다.
 ```bash
-$ cd test_folder/
-$ mdnv create folder1/ foder2/
+[file2.md](/dir1/file2.md)
+[file3.md](/dir1/file3.md)
+```
+
+## TODO
+- 여러개의 폴더명을 입력하는 기능
+```bash
+$ mdnv create ./dir1 ./dir2
 ```
 ```bash
-[file2.md](/folder1/file2.md)
-[file3.md](/folder1/file3.md)
-[file4.md](/folder2/file4.md)
-[file5.md](/folder2/file5.md)
+[file2.md](/dir1/file2.md)
+[file3.md](/dir1/file3.md)
+[file4.md](/dir2/file4.md)
+[file5.md](/dir2/file5.md)
+```
+
+- index 파일이 생성될 경로를 지정하는 옵션
+```bash
+$ mdnv create ./dir1 -p ./other_directory
 ```
 
 ## Version
 
-**현재 버전 : 0.2.0**  
+**현재 버전 : 0.3.0**  
 
 [변경 내역](CHANGELOG.md)
 
