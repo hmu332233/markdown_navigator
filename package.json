@@ -1,6 +1,6 @@
 {
   "name": "markdown_navigator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "markdown_navigator creates a link to quickly navigate to all the files in your folder.",
   "main": "./lib/app.js",
   "bin": {
