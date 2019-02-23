@@ -4,7 +4,7 @@
   "description": "markdown_navigator creates a link to quickly navigate to all the files in your folder.",
   "main": "./lib/app.js",
   "bin": {
-    "mdnv": "bin/markdown_navigator.js"
+    "mdnv": "bin/app.js"
   },
   "scripts": {
     "start": "node app.js",
@@ -25,8 +25,7 @@
   },
   "homepage": "https://github.com/hmu332233/markdown_navigator#readme",
   "dependencies": {
-    "flatiron": "^0.4.3",
-    "path-reader": "^1.0.6",
-    "underscore": "^1.8.3"
+    "commander": "^2.19.0",
+    "path-reader": "^1.0.6"
   }
 }
