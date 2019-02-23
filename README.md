@@ -6,6 +6,7 @@ English | [한국어](README-KR.md)
 
 Use it to quickly create index where markdown is used, such as "github".
 
+![example](example.gif)
 ![example](example.PNG)
 
 ## Installation 
