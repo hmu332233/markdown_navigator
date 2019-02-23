@@ -11,3 +11,7 @@ All notable changes to this project will be documented here.
 
 ### [0.2.0] - 2017-11-04
 - add feature `enter multiple folder names`
+
+### [0.3.0] - 2019-02-23
+- modify project structure
+- move feature `enter multiple folder names` to TODO
