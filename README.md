@@ -57,7 +57,7 @@ test_directory
 **basic example**
 ```bash
 $ cd test_directory/
-$ mdnv create
+$ mdnv create ./
 ```
 `index.md` is created with the following contents.
 ```bash

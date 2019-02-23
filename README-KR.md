@@ -58,7 +58,7 @@ test_directory
 **basic example**
 ```bash
 $ cd test_folder/
-$ mdnv create
+$ mdnv create ./
 ```
 다음과 같은 내용의 `index.md`파일이 생성됩니다.
 ```bash
